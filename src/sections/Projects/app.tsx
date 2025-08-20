@@ -1,61 +1,37 @@
 import { motion } from 'motion/react';
 import LazyImage from '../../components/LazyImage';
+import youtube from '../../assets/Youtube-project.png';
+import doit from '../../assets/Todo-project.png';
+import webvisualiser from '../../assets/Web-visualiser-project.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: "🛒"
+      title: "Youtube Clone",
+      description: "A youtube clone built using react, tailwind css, and youtube api.",
+      image: youtube,
+      technologies: ["React", "Tailwind CSS","Vite"],
+      liveUrl: "https://youtubev7.vercel.app/",
+      githubUrl: "https://github.com/Kruthik111/youtube-clone",
+      icon: ""
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Socket.io", "Express", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Web Visualiser",
+      description: "A web visualiser built using NextJs and tailwind css. Whcih helps beginners to understand the HTML ans CSS properties.",
+      image: webvisualiser,
+      technologies: ["NextJs", "Tailwind CSS","Framer Motion"],
+      liveUrl: "https://web-visualizerv7.vercel.app/",
+      githubUrl: "https://github.com/Kruthik111/web-visualizer",
       icon: "📋"
     },
     {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website with smooth animations, dark theme, and interactive elements showcasing my work and skills.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: "🎨"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather application with location-based forecasts, interactive maps, and detailed weather analytics using external APIs.",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300&fit=crop",
-      technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: "🌤️"
-    },
-    {
-      title: "Social Media Clone",
-      description: "A social media platform clone with user profiles, posts, comments, likes, and real-time notifications.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: "📱"
-    },
-    {
-      title: "AI Chat Application",
-      description: "An AI-powered chat application with natural language processing, conversation history, and intelligent responses.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
-      technologies: ["React", "Python", "OpenAI API", "FastAPI", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: "🤖"
+      title: "Do It",
+      description: "A todo list application built using react, tailwind css, and local storage.",
+      image: doit,
+      technologies: ["React", "Tailwind CSS"],
+      liveUrl: "https://to-do-appv7.vercel.app/",
+      githubUrl: "https://github.com/kruthik111/todo-App/",
+      icon: "📋"
     }
   ];
 
@@ -139,6 +115,7 @@ const Projects = () => {
                   {/* Action Buttons */}
                   <div className="flex gap-3">
                     <motion.a
+                      target="_blank"
                       href={project.liveUrl}
                       className="flex-1 px-4 py-2 bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold rounded-lg text-center hover:from-orange-600 hover:to-yellow-600 transition-all duration-300"
                       style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}
@@ -148,6 +125,7 @@ const Projects = () => {
                       Live Demo
                     </motion.a>
                     <motion.a
+                      target="_blank"
                       href={project.githubUrl}
                       className="flex-1 px-4 py-2 border border-white/30 text-stone-100 font-semibold rounded-lg text-center hover:bg-white/10 transition-all duration-300"
                       style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}
