@@ -58,8 +58,8 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`mx-auto block py-4 px-4 md:px-20 sticky transition-all duration-500 ease-in-out shadow-2xs z-20 shadow-gray-700 backdrop-blur-md bg-black/20 ${
-                    isSticky ? "top-0 w-screen" : "top-8 md:top-10 w-[90dvw] rounded-3xl"
+                className={`mx-auto block py-4 px-4 md:px-20 sticky transition-all duration-500 ease-in-out shadow-2xs z-20  backdrop-blur-md bg-black/20 ${
+                    isSticky ? "top-0 w-screen" : "top-8 md:top-10 w-[90dvw] rounded-xl"
                 }`}
             >
                 <div className="flex justify-between items-center relative">
