@@ -107,7 +107,7 @@ const ChatWidget = () => {
               scale: { duration: 0.3 },
               borderRadius: { duration: 0.2 }
             }}
-            className="fixed bottom-20 right-20 w-80 h-96 bg-black/90 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl z-40 flex flex-col origin-bottom-right"
+            className="fixed bottom-20 right-7 md:right-20 w-80 h-96 bg-black/90 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl z-40 flex flex-col origin-bottom-right"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-white/10">

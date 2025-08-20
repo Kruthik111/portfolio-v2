@@ -17,7 +17,7 @@ const Footer = () => {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/kruthik" 
+              href="https://www.linkedin.com/in/kruthik-s-9381b225b/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-stone-400 hover:text-white transition-colors duration-200"
@@ -25,7 +25,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a 
-              href="mailto:kruthik@example.com"
+              href="mailto:gokruthik2003@gmail.com"
               className="text-stone-400 hover:text-white transition-colors duration-200"
             >
               Email
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-white/10 pt-6">
             <p className="text-sm text-stone-400">
-              © 2025 Kruthik S. All rights reserved.
+              © {new Date().getFullYear()} Kruthik S. All rights reserved.
             </p>
           </div>
         </div>

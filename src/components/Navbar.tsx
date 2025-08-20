@@ -64,7 +64,7 @@ const Navbar = () => {
             >
                 <div className="flex justify-between items-center relative">
                     <h2 className="font-extrabold text-2xl md:text-3xl text-stone-100">
-                        Kruthik S
+                        KRUTHIK S
                     </h2>
                     
                     {/* Mobile hamburger menu button */}
@@ -87,7 +87,7 @@ const Navbar = () => {
             
             {/* Mobile navigation overlay - moved outside navbar container */}
             <div className={`md:hidden fixed inset-0 bg-black/20 backdrop-blur-md transition-opacity duration-300 z-10 ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-                <div className="flex flex-col items-center justify-center h-full pt-64">
+                <div className="flex flex-col items-center justify-center h-screen">
                     <NavElements isMobileMenuOpen={isMobileMenuOpen} />
                 </div>
             </div>
