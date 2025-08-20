@@ -1,25 +1,30 @@
 import { motion } from 'motion/react';
+import { FaReact, FaServer } from 'react-icons/fa';
+import { HiOutlineRocketLaunch } from 'react-icons/hi2';
+import { ImRocket } from 'react-icons/im';
+import { MdWeb } from 'react-icons/md';
+import { RiComputerFill } from 'react-icons/ri';
 
 const About = () => {
   const techStacks = [
     {
       category: 'Frontend',
       technologies: ['React.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Material-UI'],
-      icon: '🎨',
+      icon: <FaReact className="text-4xl md:text-5xl" />,
       color: 'from-blue-500 to-cyan-500',
       description: 'Modern UI/UX Development'
     },
     {
       category: 'Backend',
-      technologies: ['Node.js', 'Java'],
-      icon: '⚙️',
+      technologies: ['NodeJS', 'ExpressJS', 'MongoDB','Swagger'],
+      icon: <FaServer className="text-4xl md:text-5xl text-green-400" />,
       color: 'from-green-500 to-emerald-600',
       description: 'Server-side & API Development'
     },
     {
       category: 'Full Stack',
-      technologies: ['React.js', 'Node.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Material-UI', 'Java'],
-      icon: '🚀',
+      technologies: ['ReactJS', 'NodeJS', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Material-UI', 'ExpressJS','React Native'],
+      icon: <RiComputerFill  className="text-4xl md:text-5xl text-purple-400" />,
       color: 'from-purple-500 to-pink-500',
       description: 'End-to-End Development'
     }
@@ -75,20 +80,9 @@ const About = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   {/* Icon */}
-                  <motion.div
-                    className="text-4xl md:text-5xl mb-4"
-                    animate={{ 
-                      rotate: [0, 5, -5, 0],
-                      scale: [1, 1.1, 1]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: index * 0.2
-                    }}
-                  >
+                  <div className="mb-4 text-blue-400 flex justify-center">
                     {stack.icon}
-                  </motion.div>
+                  </div>
                   
                   {/* Category Name */}
                   <h3 className="text-xl md:text-2xl font-bold text-stone-100 mb-3" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
@@ -135,7 +129,9 @@ const About = () => {
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <div className="text-center md:text-left">
-                <div className="text-3xl mb-3">🎨</div>
+                <div className="text-3xl mb-3 text-blue-400 flex justify-center md:justify-start">
+                  <MdWeb />
+                </div>
                 <h4 className="text-lg font-semibold text-stone-100 mb-2" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
                   Frontend Development
                 </h4>
@@ -144,7 +140,9 @@ const About = () => {
                 </p>
               </div>
               <div className="text-center md:text-left">
-                <div className="text-3xl mb-3">⚙️</div>
+                <div className="text-3xl mb-3 text-green-400 flex justify-center md:justify-start">
+                  <FaServer />
+                </div>
                 <h4 className="text-lg font-semibold text-stone-100 mb-2" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
                   Backend Development
                 </h4>
@@ -153,7 +151,9 @@ const About = () => {
                 </p>
               </div>
               <div className="text-center md:text-left">
-                <div className="text-3xl mb-3">🚀</div>
+                <div className="text-3xl mb-3 text-purple-400 flex justify-center md:justify-start">
+                  <HiOutlineRocketLaunch />
+                </div>
                 <h4 className="text-lg font-semibold text-stone-100 mb-2" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
                   Full Stack Solutions
                 </h4>

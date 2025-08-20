@@ -1,38 +1,46 @@
 import { motion } from 'motion/react';
+import storeking from '../../assets/storekinglogo.png';
+import hactoberfest from '../../assets/hacktoberfestlogo.jpeg';
+import learningpaths from '../../assets/Learningpaths.jpeg';
+import amc2 from '../../assets/amc2logo.jpeg';
 
 const Experience = () => {
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Full Stack Developer",
-      duration: "2023 - Present",
-      description: "Led development of enterprise web applications using React, Node.js, and TypeScript. Implemented CI/CD pipelines and mentored junior developers.",
+      company: "Storeking",
+      position: "Software Engineer",
+      duration: "2025 - Present",
+      description: "Working on upgrading the backend system to the latest stable versions to improve maintainability and performance.Developed and integrated a Geo-fencing feature that allows retailers to define their serviceable boundaries, enabling users within those boundaries to discover nearby shops.Implemented an Auto-Allocation of Stock functionality, allowing retailers to allocate stock with a single click, significantly reducing manual effort",
       technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker"],
-      icon: "💼"
+      icon: storeking,
+      link: "https://storeking.com"
     },
     {
-      company: "InnovateLabs",
-      position: "Full Stack Developer",
-      duration: "2022 - 2023",
-      description: "Developed scalable web applications and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      technologies: ["JavaScript", "React", "Express.js", "MongoDB", "Git"],
-      icon: "🚀"
+      company: "HactoberFest",
+      position: "Contributor",
+      duration: "2024",
+      description: "Collaborated with 6 open-source projects. 6 out of 8 contributions got accepted and merged",
+      technologies: ["JavaScript", "ReactJS","Git", "Tailwind CSS"],
+      icon: hactoberfest,
+      link: "https://x.com/hacktoberfest"
     },
     {
-      company: "StartupHub",
-      position: "Frontend Developer",
-      duration: "2021 - 2022",
-      description: "Built responsive user interfaces and implemented modern design patterns. Optimized application performance and user experience.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Redux", "Jest"],
-      icon: "🎨"
+      company: "LearningpathsIO",
+      position: "Web Developer",
+      duration: "2024",
+      description: "Developed and maintained web applications using HTML, CSS, JavaScript, React, and Tailwind CSS",
+      technologies: ["React", "Javascript", "Tailwind CSS"],
+      icon: learningpaths,
+      link: "https://www.linkedin.com/company/learningpaths/posts/?feedView=all"
     },
     {
-      company: "CodeCraft Studios",
-      position: "Junior Developer",
-      duration: "2020 - 2021",
-      description: "Contributed to various web projects and learned modern development practices. Worked on bug fixes and feature implementations.",
-      technologies: ["JavaScript", "HTML", "CSS", "React", "Node.js"],
-      icon: "🔧"
+      company: "AMC² Coding Club",
+      position: "Member",
+      duration: "2024",
+      description: "AMC2 or Amrita coding club is an coding club in Amrita vishwavidyapeetam Mysore.Which organizes events , competition, webinars and many other related to coding and computer science..",
+      technologies: ["React", "Javascript", "Teamwork","Problem Solving"],
+      icon: amc2,
+      link: "https://www.linkedin.com/company/amc%C2%B2-coding-club/posts/?feedView=all"
     }
   ];
 
@@ -86,7 +94,7 @@ const Experience = () => {
                   <div className="flex flex-col md:flex-row md:items-start gap-4">
                     {/* Icon */}
                     <div className="text-4xl md:text-5xl flex-shrink-0">
-                      {experience.icon}
+                      <img src={experience.icon} alt={experience.company} className="w-16 h-16" />
                     </div>
                     
                     {/* Content */}
