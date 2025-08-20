@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { FaReact, FaServer } from 'react-icons/fa';
 import { HiOutlineRocketLaunch } from 'react-icons/hi2';
-import { ImRocket } from 'react-icons/im';
 import { MdWeb } from 'react-icons/md';
 import { RiComputerFill } from 'react-icons/ri';
 
