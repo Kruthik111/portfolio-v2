@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import kruthik from '../../assets/kruthik.png';
+import kruthikOptimized from '../../assets/kruthik.webp';
+import kruthikPlaceholder from '../../assets/kruthik-placeholder.webp';
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -47,11 +49,26 @@ const Hero = () => {
               
               {/* Profile image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <img 
-                  src={kruthik} 
-                  alt="Kruthik S" 
-                  className="w-3/4 h-3/4 object-cover rounded-full border-4 border-white/20 shadow-2xl"
-                />
+                <picture className="w-3/4 h-3/4">
+                  <source srcSet={kruthikOptimized} type="image/webp" />
+                  <source srcSet={kruthik} type="image/png" />
+                  <img 
+                    src={kruthikOptimized}
+                    alt="Kruthik S" 
+                    width={1024}
+                    height={1536}
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    sizes="(max-width: 768px) 70vw, 500px"
+                    className="w-full h-full object-cover rounded-full border-4 border-white/20 shadow-2xl"
+                    style={{ 
+                      backgroundImage: `url(${kruthikPlaceholder})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}
+                  />
+                </picture>
               </div>
             </div>
           </div>
