@@ -2,18 +2,26 @@ import { motion } from 'motion/react';
 import LazyImage from '../../components/LazyImage';
 import youtube from '../../assets/Youtube-project.png';
 import doit from '../../assets/Todo-project.png';
+import zappstore from '../../assets/zappstorespreview.png';
 import webvisualiser from '../../assets/Web-visualiser-project.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Youtube Clone",
-      description: "A youtube clone built using react, tailwind css, and youtube api.",
-      image: youtube,
-      technologies: ["React", "Tailwind CSS","Vite"],
-      liveUrl: "https://youtubev7.vercel.app/",
-      githubUrl: "https://github.com/Kruthik111/youtube-clone",
-      icon: ""
+      title: "DevUtils",
+      description: "Frequently used developer commands, snippets, links, and notes into a single, searchable clipboard vault with instant copy and click-to-copy access.",
+      image: "https://devutils-v1.vercel.app/_next/static/media/appdesktoppreview.d9ed79e8.png",
+      technologies: ["Next.js", "Tailwind CSS","Framer Motion","OAuth"],
+      liveUrl: "https://devutils-v1.vercel.app/",
+      githubUrl: "https://github.com/Kruthik111/"
+    },
+    {
+      title: "Zapp Stores",
+      description: "A modern e-commerce platform built with React, Tailwind CSS and Framer Motion.",
+      image: zappstore,
+      technologies: ["React", "Tailwind CSS","Framer Motion"],
+      liveUrl: "https://zapp-stores.vercel.app/",
+      githubUrl: "https://github.com/Kruthik111/ZappStores"
     },
     {
       title: "Web Visualiser",
@@ -23,6 +31,15 @@ const Projects = () => {
       liveUrl: "https://web-visualizerv7.vercel.app/",
       githubUrl: "https://github.com/Kruthik111/web-visualizer",
       icon: "📋"
+    },
+    {
+      title: "Youtube Clone",
+      description: "A youtube clone built using react, tailwind css, and youtube api.",
+      image: youtube,
+      technologies: ["React", "Tailwind CSS","Vite"],
+      liveUrl: "https://youtubev7.vercel.app/",
+      githubUrl: "https://github.com/Kruthik111/youtube-clone",
+      icon: ""
     },
     {
       title: "Do It",
